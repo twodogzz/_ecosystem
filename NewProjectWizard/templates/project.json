@@ -1,0 +1,7 @@
+{
+    "name": "{{name}}",
+    "purpose": "{{purpose}}",
+    "version": "{{version}}",
+    "author": "{{author}}",
+    "created": "{{created}}"
+  }
