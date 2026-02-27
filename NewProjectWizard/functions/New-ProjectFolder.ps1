@@ -9,7 +9,10 @@ function New-ProjectFolder {
 
     if (Test-Path $root) {
         $choice = Read-Host "Folder already exists. Continue? (y/n)"
-        if ($choice -ne 'y') { throw "Aborted by user." }
+        if ($choice -ne 'y') {
+            Write-Warning "Project creation aborted by user."
+            return $null
+        }
     } else {
         New-Item -ItemType Directory -Path $root | Out-Null
     }

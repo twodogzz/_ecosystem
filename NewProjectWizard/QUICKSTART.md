@@ -4,8 +4,19 @@ This guide will help you get started with the New Project Wizard module.
 
 ---
 
-## Step 1: Import the Module
+## Step 1: Choose How to Run
 
+### 🎯 Quick & Easy (Recommended)
+**Double-click** `Start-NewProjectWizard.bat` in the NewProjectWizard folder
+
+OR
+
+**Create a desktop shortcut** for one-click access anytime
+
+> See [HOW-TO-RUN.md](HOW-TO-RUN.md) for detailed instructions on all methods
+
+### Advanced: Import as Module
+If you prefer the traditional PowerShell module approach:
 ```powershell
 Import-Module "E:\SoftwareProjects\_ecosystem\NewProjectWizard\NewProjectWizard.psd1"
 ```

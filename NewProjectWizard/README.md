@@ -17,12 +17,23 @@ A deterministic, auditable PowerShell module for creating standardized software 
 
 ## Installation
 
-### Option 1: Import directly
+### Quick Start (Recommended)
+No installation needed! Simply:
+
+1. **Double-click** `Start-NewProjectWizard.bat` to run the wizard
+2. Or create a desktop shortcut for easy access
+
+> See [HOW-TO-RUN.md](HOW-TO-RUN.md) for complete instructions
+
+### Advanced: Module Import
+If you prefer to use it as a PowerShell module:
+
+#### Option 1: Import directly
 ```powershell
 Import-Module "E:\SoftwareProjects\_ecosystem\NewProjectWizard\NewProjectWizard.psd1"
 ```
 
-### Option 2: Add to PowerShell Profile
+#### Option 2: Add to PowerShell Profile
 Add this line to your PowerShell profile (`$PROFILE`):
 ```powershell
 Import-Module "E:\SoftwareProjects\_ecosystem\NewProjectWizard\NewProjectWizard.psd1"
@@ -31,6 +42,14 @@ Import-Module "E:\SoftwareProjects\_ecosystem\NewProjectWizard\NewProjectWizard.
 ---
 
 ## Usage
+
+### Quick Method
+Double-click `Start-NewProjectWizard.bat` and follow the prompts
+
+### Module Method
+```powershell
+New-Project
+```
 
 ### Basic Usage
 ```powershell
