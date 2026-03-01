@@ -1,1 +1,9 @@
-[]
+{
+    "id":  1,
+    "name":  "_ecosystem",
+    "folder":  "_ecosystem",
+    "purpose":  "Create a project folder structure including standard files",
+    "version":  "0.1.0",
+    "created":  "2026-02-28",
+    "lastUpdated":  "2026-02-28"
+}
