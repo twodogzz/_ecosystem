@@ -30,7 +30,13 @@ function New-Project {
 
         $rm = Read-Host "Run Repo Manager now? (y/n)"
         if ($rm -eq 'y') {
-            Invoke-RepoManager -Root $root
+            $defaultRepoManagerFolder = "E:\SoftwareProjects\GitHubRepoManager"
+            $repoManagerFolder = Read-Host "Enter Repo Manager folder (default: $defaultRepoManagerFolder)"
+            if ([string]::IsNullOrWhiteSpace($repoManagerFolder)) {
+                $repoManagerFolder = $defaultRepoManagerFolder
+            }
+
+            Invoke-RepoManager -Root $root -RepoManagerFolder $repoManagerFolder
         }
 
         Update-MasterProjectList -Metadata $meta -Root $root
